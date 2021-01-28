@@ -20,7 +20,7 @@ class Demo2ApplicationTests {
 
 	@Test
 	public void exampleTest2() {
-		assertThat(5,is(2));
+		assertThat(7,is(2));
 	}
 
 }
