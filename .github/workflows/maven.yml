@@ -26,10 +26,11 @@ jobs:
     - name: Build with Maven
       run: mvn test
 
-#    - name: Slack Notification on Failure
-#      uses: rtCamp/action-slack-notify@v2.0.2
-#      if: failure()
-#      env:
-#        SLACK_USERNAME: Github
-#        SLACK_TITLE: Test Failure
-#        SLACK_COLOR: danger
+    - name: Slack Notification on Failure
+      uses: rtCamp/action-slack-notify@v2.0.2
+      if: failure()
+      env:
+        SLACK_ICON: https://github.com/favicon.ico
+        SLACK_USERNAME: Github
+        SLACK_TITLE: Test Failure
+        SLACK_COLOR: danger
