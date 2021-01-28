@@ -18,4 +18,9 @@ class Demo2ApplicationTests {
 		assertThat(2,is(2));
 	}
 
+	@Test
+	public void exampleTest2() {
+		assertThat(2,is(2));
+	}
+
 }
