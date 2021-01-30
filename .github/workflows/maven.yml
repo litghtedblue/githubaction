@@ -6,9 +6,12 @@ name: Java CI with Maven
 on:
   push:
     branches: [ master ]
+    paths:
+    - 'apps/**'
   pull_request:
     branches: [ master ]
-
+    paths:
+    - 'apps/**'
 env:
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
 
