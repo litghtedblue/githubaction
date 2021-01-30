@@ -16,7 +16,7 @@ class WebdemoApplicationTests {
 
 	@Test
 	public void exampleTest2() {
-		assertThat(true,is(NumberUtils.isDigits("123456")));
+		assertThat(true,is(NumberUtils.isDigits("1234567")));
 		assertThat(5,is(5));
 	}
 
