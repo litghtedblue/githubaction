@@ -15,7 +15,7 @@ class WebdemoApplicationTests {
 
 	@Test
 	public void exampleTest2() {
-		assertThat(4,is(4));
+		assertThat(5,is(5));
 	}
 
 }
