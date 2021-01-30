@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.apache.commons.lang3.math.NumberUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -15,6 +16,7 @@ class WebdemoApplicationTests {
 
 	@Test
 	public void exampleTest2() {
+		assertThat(true,is(NumberUtils.isDigits("12345")));
 		assertThat(5,is(5));
 	}
 
