@@ -7,11 +7,11 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'apps/**'
+    - 'parent/**'
   pull_request:
     branches: [ master ]
     paths:
-    - 'apps/**'
+    - 'parent/**'
 env:
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
 
@@ -28,7 +28,7 @@ jobs:
         java-version: 11
     - name: Test with Maven
       run: mvn test
-      working-directory: ./apps
+      working-directory: ./parent
 
     - name: Slack Notification on Failure
       uses: rtCamp/action-slack-notify@v2.0.2
