@@ -7,5 +7,4 @@ workflows:
   maven_test:
     jobs:
       - maven/test:
-          app_src_directory: /parent
-
+          app_src_directory: parent
