@@ -10,4 +10,8 @@ public class WebdemoApplication {
 		SpringApplication.run(WebdemoApplication.class, args);
 	}
 
+	public void abc(){
+		new Public();
+		new Public("");
+	}
 }
